@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Doula Bia Love</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#fffaf7;
+      color:#4b3b35;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#f7d6d0,#fceeea);
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+      color:#7a4e47;
+    }
+
+    header p{
+      font-size:1.2rem;
+      max-width:700px;
+      margin:auto;
+    }
+
+    nav{
+      background:#fff;
+      padding:15px;
+      position:sticky;
+      top:0;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+      z-index:100;
+    }
+
+    nav ul{
+      display:flex;
+      justify-content:center;
+      list-style:none;
+      gap:30px;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#7a4e47;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#d48f82;
+    }
+
+    section{
+      padding:70px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h2{
+      font-size:2.2rem;
+      color:#7a4e47;
+    }
+
+    .sobre{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .sobre img{
+      width:100%;
+      border-radius:20px;
+      object-fit:cover;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#fff;
+      padding:30px;
+      border-radius:20px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.05);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#7a4e47;
+    }
+
+    .depoimentos{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .depoimento{
+      background:#fff;
+      padding:25px;
+      border-left:5px solid #d48f82;
+      border-radius:15px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .contato{
+      text-align:center;
+      background:#fceeea;
+      border-radius:20px;
+      padding:50px 20px;
+    }
+
+    .contato a{
+      display:inline-block;
+      margin-top:20px;
+      background:#d48f82;
+      color:#fff;
+      padding:15px 30px;
+      border-radius:50px;
+      text-decoration:none;
+      transition:0.3s;
+      font-weight:600;
+    }
+
+    .contato a:hover{
+      background:#b96f63;
+    }
+
+    footer{
+      text-align:center;
+      padding:25px;
+      background:#7a4e47;
+      color:#fff;
+    }
+
+    @media(max-width:768px){
+      .sobre{
+        grid-template-columns:1fr;
+      }
+
+      header h1{
+        font-size:2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Doula Ana Clara</h1>
+    <p>
+      Apoio emocional, físico e informativo para uma gestação mais leve,
+      consciente e acolhedora.
+    </p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="sobre">
+    <div class="section-title">
+      <h2>Sobre Mim</h2>
+    </div>
+
+    <div class="sobre">
+      <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200&auto=format&fit=crop" alt="Doula">
+
+      <div>
+        <p>
+          Olá! Sou Bia Love, doula apaixonada pelo cuidado humanizado
+          durante a gestação, parto e pós-parto.
+        </p>
+
+        <br>
+
+        <p>
+          Meu propósito é oferecer acolhimento, informação e suporte para
+          que cada mulher viva esse momento de forma segura, respeitosa e
+          cheia de significado.
+        </p>
+
+        <br>
+
+        <p>
+          Atuo com acompanhamento emocional, preparação para o parto,
+          suporte ao parceiro e cuidados no puerpério.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <div class="section-title">
+      <h2>Serviços</h2>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Pré-natal</h3>
+        <p>
+          Encontros de preparação emocional e informativa para o parto e
+          maternidade.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Acompanhamento no Parto</h3>
+        <p>
+          Presença contínua com apoio físico e emocional durante o trabalho
+          de parto.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Pós-parto</h3>
+        <p>
+          Suporte no puerpério, amamentação e adaptação da nova rotina da família.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Plano de Parto</h3>
+        <p>
+          Auxílio na construção de um plano de parto consciente e humanizado.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="depoimentos">
+    <div class="section-title">
+      <h2>Depoimentos</h2>
+    </div>
+
+    <div class="depoimentos">
+
+      <div class="depoimento">
+        <p>
+          “A Ana foi essencial no nascimento do meu filho. Me senti segura,
+          acolhida e muito forte durante todo o processo.”
+        </p>
+
+        <br>
+
+        <strong>— Mariana Souza</strong>
+      </div>
+
+      <div class="depoimento">
+        <p>
+          “Ter uma doula ao meu lado transformou completamente minha experiência
+          de parto.”
+        </p>
+
+        <br>
+
+        <strong>— Fernanda Lima</strong>
+      </div>
+
+      <div class="depoimento">
+        <p>
+          “Muito carinho, profissionalismo e empatia. Recomendo de olhos fechados.”
+        </p>
+
+        <br>
+
+        <strong>— Juliana Alves</strong>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="contato">
+      <h2>Vamos Conversar?</h2>
+
+      <p>
+        Entre em contato para tirar dúvidas ou agendar um atendimento.
+      </p>
+
+      <a href="https://wa.me/5599999999999" target="_blank">
+        Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Doula Ana Clara — Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
