@@ -110,22 +110,22 @@
       border-radius:20px;
       box-shadow:0 5px 20px rgba(0,0,0,0.05);
       transition:0.3s;
-    }
+      }
 
     .card:hover{
       transform:translateY(-5px);
-    }
+      }
 
     .card h3{
       margin-bottom:15px;
       color:#7a4e47;
-    }
+      }
 
     .depoimentos{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
       gap:25px;
-    }
+      }
 
     .depoimento{
       background:#fff;
@@ -133,8 +133,46 @@
       border-left:5px solid #d48f82;
       border-radius:15px;
       box-shadow:0 4px 15px rgba(0,0,0,0.05);
+      }
+
+
+    .certificados {
+      padding: 60px 20px;
+      text-align: center;
+      }
+
+    .certificados h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      }
+
+    .certificados-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      }
+
+    .certificado-card {
+      background: #111;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
     }
 
+    .certificado-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .certificado-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+   .certificado-card p {
+     padding: 15px;
+     font-size: 1rem;
+    }
     .contato{
       text-align:center;
       background:#fceeea;
@@ -308,7 +346,30 @@
 
     </div>
   </section>
+  
+<!-- CERTIFICADOS -->
+<section id="certificados" class="certificados">
+  <h2>Certificados</h2>
 
+  <div class="certificados-grid">
+
+    <div class="certificado-card">
+      <img src="img/certificado1.jpg" alt="Certificado de HTML e CSS">
+      <p>HTML e CSS - Curso em Vídeo</p>
+    </div>
+
+    <div class="certificado-card">
+      <img src="img/certificado2.jpg" alt="Certificado de JavaScript">
+      <p>JavaScript Moderno</p>
+    </div>
+
+    <div class="certificado-card">
+      <img src="img/certificado3.jpg" alt="Certificado de React">
+      <p>React.js Completo</p>
+    </div>
+
+  </div>
+</section>
   <section id="contato">
     <div class="contato">
       <h2>Vamos Conversar?</h2>
